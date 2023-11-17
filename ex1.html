@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1</title>
+</head>
+<body>
+    <h1>Soma</h1>
+    <div id="resultado"></div>
+    <script>
+        const v1 = Number(prompt("Digite o primeiro valor."))
+        const v2 = Number(prompt("Digite o segundo valor."))
+        const v3 = Number(prompt("Digite o terceiro valor."))
+        let soma
+        let a
+
+        function somar (a, b, c) {
+            soma = a + b + c
+            return soma
+        }
+
+        function mostra (a) {
+            document.getElementById("resultado").innerHTML = "O resultado das somas é " + a
+        }
+
+        somar(v1, v2, v3)
+        mostra(soma)
+
+    </script>
+</body>
+</html>
